@@ -20,7 +20,7 @@ def split_and_copy():
     create_dirs(output_dir)
 
     for cls in classes:
-        print(f"📂 Processing class: {cls}")
+        print(f"Processing class: {cls}")
         images = []
 
         # Collect all images from resized train and test folders
@@ -34,7 +34,7 @@ def split_and_copy():
                     continue
                 images.append(img_path)
 
-        print(f"🔢 Found {len(images)} total {cls} images")
+        print(f"Found {len(images)} total {cls} images")
 
         # Stratified splitting
         train_imgs, temp_imgs = train_test_split(images, train_size=split_ratio[0], random_state=42)
@@ -48,7 +48,7 @@ def split_and_copy():
         for img in test_imgs:
             shutil.copy(img, os.path.join(output_dir, "test", cls, os.path.basename(img)))
 
-        print(f"✅ {cls}: Train={len(train_imgs)}  Val={len(val_imgs)}  Test={len(test_imgs)}")
+        print(f"{cls}: Train={len(train_imgs)}  Val={len(val_imgs)}  Test={len(test_imgs)}")
 
 if __name__ == "__main__":
     split_and_copy()

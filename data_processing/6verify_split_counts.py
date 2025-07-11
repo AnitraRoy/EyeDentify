@@ -5,7 +5,7 @@ splits = ["train", "val", "test"]
 classes = ["CNV", "DME", "DRUSEN", "NORMAL"]
 
 for split in splits:
-    print(f"\n📊 {split.upper()} set counts:")
+    print(f"\n{split.upper()} set counts:")
     for cls in classes:
         path = os.path.join(base_dir, split, cls)
         count = len([f for f in os.listdir(path) if not f.startswith('.')])

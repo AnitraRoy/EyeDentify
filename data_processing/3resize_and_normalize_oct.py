@@ -32,9 +32,9 @@ def resize_and_normalize_images(subset):
                 normalized_img = Image.fromarray((img_array * 255).astype(np.uint8))
                 normalized_img.save(output_img_path)
             except Exception as e:
-                print(f"⚠️ Error processing {input_img_path}: {e}")
+                print(f"Error processing {input_img_path}: {e}")
 
-    print(f"✅ Finished processing {subset} set.")
+    print(f"Finished processing {subset} set.")
 
 # === RUN FOR BOTH TRAIN AND TEST ===
 if __name__ == "__main__":

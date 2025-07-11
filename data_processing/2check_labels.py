@@ -7,7 +7,7 @@ base_path = "/Users/yoishikrakshit/Downloads/CellData/OCT"
 for subset in ["train", "test"]:
     folder_path = os.path.join(base_path, subset)
     if not os.path.exists(folder_path):
-        print(f"❌ Folder not found: {folder_path}")
+        print(f"Folder not found: {folder_path}")
         continue
 
     print(f"\n📁 {subset.upper()} subfolders:")
@@ -18,4 +18,4 @@ for subset in ["train", "test"]:
             if os.path.isdir(full_path):
                 print(f"  - {cls}")
     except Exception as e:
-        print(f"⚠️ Error reading {folder_path}: {e}")
+        print(f"Error reading {folder_path}: {e}")
