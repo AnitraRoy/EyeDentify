@@ -31,7 +31,7 @@ The baseline performed well on the small dataset, but poor on the large dataset,
 
 | Dataset     | Accuracy (%) |
 |-------------|--------------|
-| **Small**   | 68.33        |
+| **Small**   | 78.33        |
 | **Large**   | 54.36        |
 | **New**     | 21.67        |
 
