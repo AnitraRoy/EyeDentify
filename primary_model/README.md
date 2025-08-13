@@ -11,7 +11,7 @@ This project classifies OCT (Optical Coherence Tomography) images into **CNV**, 
 ## Dataset
 - **Small dataset:** 50 images/class (200 total) for initial testing  
 - **Large dataset:** 3,000 images/class (12,000 total) for final evaluation; no overlap with small dataset  
-- **New dataset:** From the *Retinal OCT Image Classification C8* dataset on Kaggle, containing a different distribution from the UCSD dataset. A balanced 50 images/class (200 total) was sampled, and models were tested using the same UCSD-trained hyperparameters without further tuning.  
+- **New dataset:** From the Retinal OCT Image Classification C8 dataset on Kaggle, containing a different distribution from the UCSD dataset. A balanced 50 images/class (200 total) was sampled, and models were tested using the same UCSD-trained hyperparameters without further tuning.  
 
 ## Results
 ResNet-18 achieved the highest accuracy among tested models:
